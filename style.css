@@ -7,7 +7,7 @@
 html {
     border: 0px;
     margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family:  Helvetica; */
 }
 body{
     margin: 0px;
@@ -20,7 +20,8 @@ body{
     padding-bottom: 20px    ;
     font-size:30px;
     background-color: lavender;
-    
+    font-family: Helvetica;
+
 
 }
 .content1{
@@ -29,11 +30,24 @@ body{
     padding-left: 40px;
     padding-top: 20px;
     padding-bottom: 20px;
+    justify-content: space-between;
     background-color: lavender;
-
+    
 }
 .block1{
-    background-color: white;
+    font-family: Helvetica;
+    background-color: rgb(255, 255, 255);
 
+}
+.menuButton{
+    display: flex;
+   padding: 20px;
+   align-content: center;
+   justify-content: space-around;
+}
+.buttonContent{
+    
+    font-family: helvetica;
+    background-color: rgb(202, 134, 255);
 }
 }
