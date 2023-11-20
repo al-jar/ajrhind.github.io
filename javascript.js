@@ -1,0 +1,1 @@
+// create a function to add two numbers together and return the result in console.log
