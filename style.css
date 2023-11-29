@@ -115,25 +115,23 @@ body{
     width: 25%;
     font-size: 60%;
     text-transform: uppercase;
-    /* text-transform: capitalize; */
+       
 }
-/* .navbar2{
-    display: flex;
-    padding: 50px   ;
-    margin-right: auto;
-    text-align: center;
-    width: auto;
-} */
+.hoverStyle:hover{
+    color: rgb(95, 95, 248);
+    text-decoration: underline;
+}
+
 #navbar2 {
     width: 100%;
     overflow: hidden;
-    background-color: #f3e6fa;
+    background-color: rgb(150, 150, 253);
   }
   
   /* Navbar links */
   #navbar2 a {
     float: center;
-width: auto;
+    width: auto;
     display: block;
     color: #000000;
     text-align: center;
@@ -161,13 +159,17 @@ width: auto;
 
 a:link{
     text-decoration: none;
+    color:  rgb(142, 142, 252);
 }
 a:visited{
     text-decoration: none;
-    color: #000000;
+    color:  rgb(142, 142, 252);
 }
-a:hover{
-    color: rgb(122, 122, 246);
+/* a:hover{
+    color: rgb(103, 103, 245);
+} */
+.title:hover{
+    color: black;
 }
 .buttonContent:hover{
     box-shadow: 5px 5px 2px black;
@@ -184,7 +186,14 @@ a:hover{
     display: block;
     padding: 50px;
 }
-
+.webby{
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+.webby:hover{
+    color: rgb(95, 95, 250);
+}
 .block1{
     /* padding-left: 20%; */
     padding-right:auto;
@@ -232,6 +241,8 @@ a:hover{
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
  }
 .sideBy{
     display: flex;
