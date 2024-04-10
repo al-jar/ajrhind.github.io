@@ -89,6 +89,7 @@ body{
     font-family: Helvetica;
     max-height: 100vh;
 }
+
 .heading2{
     display: flex;
     flex-direction: column;
@@ -251,5 +252,24 @@ a:visited{
 .imgCaption{
     text-transform: capitalize;
     font-size: 10px;
+}
+/* AI PAGE */
+.headingA{
+    display: flex;
+    justify-content: center;
+    padding-right:auto;
+    padding-top: 5%;
+    padding-bottom: 5% ;
+    font-size:30px;
+    background-color: lavender;
+    font-family: Helvetica;
+    max-height: 100vh;
+}
+.outerShell{
+
+    padding:6%;
+}
+.innerShell{
+    display: flex;
 }
 }
