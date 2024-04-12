@@ -266,10 +266,23 @@ a:visited{
     max-height: 100vh;
 }
 .outerShell{
-
+    flex-direction:row;
     padding:6%;
 }
-.innerShell{
+.leftShell{
     display: flex;
+    float: left;
+    width:47%;
+
+}
+.rightShell{
+    display:flex;
+    flex-direction: column;
+    float: right;
+    width:50%;
+}
+.innerShellSpecs{
+    display:flex;
+    width: 100%
 }
 }
