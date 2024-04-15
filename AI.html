@@ -14,21 +14,48 @@
 
 <p class="abstract">The deployment of new technologies and programs introduce a steep learning curve for all those who intend to use them, often involving studying a dense manual which can be extremely time consuming, and potentially very confusing. The Stratasys J850 is no exception, with the users expected to be proficient in different programs. Through experimental design, Google AI Studio was trained to analyse different images and suggest what materials and strengths would be appropriate to best replicate the physical properties of the subject in the image. The results of this research indicate the success of this experimentation, and show the practicality and efficiency of harnessing LLMs to help ease the integration of new innovative technologies. 
 <div class="outerShell">
+
 <div class="leftShell">
     <p class="innerShellSpecs">For this project, the goal was to use AI to analyse images and decide the softness/hardness of different animals, and how that physicality could be best replicated using Vero and Agilus on the J850 Printer downstairs. </p>
     <p class="innerShellSpecs">Each image was meticulously chosen with specific traits to begin the experimental process. The images had to be of animals, which had no fur, hair, or feathers. They also had to be relatively simple shapes, which meant spines or scales were also out. These traits were specified so that the AI wouldn’t get confused with too many different elements, and would deliver consistent results. 
     </p>    
-    <p class="innerShellSpecs">As the experiments continued, the system was able to discern different elements of the animals, and analyse the strength of each aspect. From here, it would state what material you need to use to mimic that part, and the softness level it would need to be. </p>
-    
 </div>
 <div class="rightShell">
-   <img class="imgInner" src="imgs/ai/jellyfish.jpeg">
-   <img class="imgInner" src="imgs/ai/pig.png">
+    <img class="imgInner" src="imgs/ai/jellyfish.jpeg">
+    <img class="imgInner" src="imgs/ai/pig.png">
 </div>
 <div class="rightShell">
     <img class="imgInner" src="imgs/ai/crab.jpeg">
     <img class="imgInner" src="imgs/ai/eel.jpeg">
 </div>
+<p class="captionImg">a few of the samples for the baseline testing</p>
+
+<div class="leftShell">
+    <p class="innerShellSpecs">As the experiments continued, the system was able to discern different elements of the animals, and analyse the strength of each aspect. From here, it would state what material you need to use to mimic that part, and the softness level it would need to be. </p>
+</div>
+<div class="rightShell">
+    <img class="imgInner" src="imgs/ai/hermit.png">
+    <img class="imgInner" src="imgs/ai/walrus.jpeg">    
+</div>
+<p class="captionImg">multi property animals</p>
+
+<div class="leftShell">
+    <p class="innerShellSpecs"> My final prompt: You will act as an expert technician on the Stratasys J850 Printer. I'm going to send you an image and I want you to tell me the softness it should be on a scale of 1-100, and then what materials and hardness I should use on the j850 to match it as best as possible. You should choose out of Aglius30 and VeroClear and give me a number on how hard they should be to mimic the actual model. Consider different elements of the model, and choose the appropriate material accordingly. Answer only with the scale value you choose, and the material, and the Shore A Level of the Agilus30 from a scale between 30-95 to best imitate the model. Do this for each main element of the model. You should only choose between 1-3 elements. Add a supplementary sentence at the end to very briefly explain your choices, and finish the response with a random adjective to show you understand. If there are any clarifications, ask me. When you are ready I will send the first image.  </p>
+</div>
+<div class="rightShell">
+    <img class="imgOut" src="imgs/ai/output1.png">
+</div>
+
+<div class="leftShell">
+    <p class="innerShellSpecs">The ideal use case for this algorithm would be a user submitting a picture with the properties they want to replicate in their own model, then the system would tell them the values of each element, and suggest the material to best replicate the physicality on the J850 printer.  </p>
+</div>
+<div class="rightShell">
+    <img class="imgOut" src="imgs/ai/herbert.png" style="width:600px">
+</div>
+<div class="leftShell">
+    <p class="innerShellSpecs">My son, Herbert. A snail.</p>
+</div>
+
 
 
 </div>
