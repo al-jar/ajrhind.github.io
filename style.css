@@ -82,10 +82,11 @@ html, body {
 .heading{
     display: flex;
     justify-content: center;
+    text-transform: uppercase;
     padding-right:auto;
     padding-top: 10%;
     padding-bottom: 10% ;
-    font-size:30px;
+    font-size:2vw;
     width: 100%;
     background-color: #020122;
     font-family: Helvetica;
@@ -103,42 +104,94 @@ html, body {
     height: auto;
     flex-grow: 1;
 }
-
-.left{
-    display:flex;
+.left {
+    display: flex;
     flex-direction: column;
-    justify-content: end;
-    width: 30%;
-    background-image: url(imgs/pigeon.jpg);
     align-items: center;
+    justify-content: end;
+    width: 40%;
+    background-color: #4981e9;
+    opacity: 0.6;
+    padding: 20px;
+    position: relative;
 }
+.left:hover{
+    background-color: #4981e9;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
 .leftTitle{
     margin: 0px;
-    background-color: #4981E9;
-    font-size: 140px;
-    text-align: center; 
+    font-size: 6vw;
     text-transform: uppercase;
-    width: 100%;
+    text-align: center;
+    width:100%;
     line-height: 1;
-}
-.leftTitle p{
-    margin: 0px;
-}
 
+}
 .middle{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
     width: 40%;
     background-color: #DB3069;
+    opacity: 0.6;
     padding: 20px;
+    position: relative;
 }
+.middle:hover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    width: 40%;
+    background-color: #DB3069;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+    position: relative;
+}
+.middleTitle{
+    margin: 0px;
+    font-size: 6vw;
+    text-transform: uppercase;
+    text-align: center;
+    width:100%;
+    line-height: 1;
 
+}
 .right{
     display: flex;
-    justify-content: center;
-    width: 30%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    width: 40%;
     background-color: #F7DC64;
+    opacity: 0.6;
     padding: 20px;
+    position: relative;
+}
+.right:hover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    width: 40%;
+    background-color: #F7DC64;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+    position: relative;
+}
+.rightTitle{
+    margin: 0px;
+    font-size: 6vw;
+    text-transform: uppercase;
+    text-align: center;
+    width:100%;
+    line-height: 1;
 }
 
 footer{
