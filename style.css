@@ -4,13 +4,13 @@
     box-sizing: border-box;
     margin-top: 0px;
 }
-html {
+/* html {
     border: 0px;
     margin: 0px;
 }
 body{
     margin: 0px;
-}
+} */
 .heading{
     margin: 0px;
     padding-left:30% ;
@@ -52,15 +52,6 @@ body{
     font-family: helvetica;
     background-color: rgb(220, 185, 246);
 }
-a:link{
-    text-decoration: none;
-}
-a:visited{
-    text-decoration: none;
-    }
-    .buttonContent:hover{
-      box-shadow: 5px 5px 2px black;
-    }
 }
 
 /* #==================================================================================================== */
@@ -75,18 +66,16 @@ html, body {
     margin: 0px;
     font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     scroll-behavior: smooth;
-    /* background-image: radial-gradient(white 60%, #527B8E ); */
     height: 100%;
 }
-
 .heading{
     display: flex;
     justify-content: center;
     text-transform: uppercase;
     padding-right:auto;
-    padding-top: 10%;
-    padding-bottom: 10% ;
-    font-size:2vw;
+    padding-top: 5%;
+    padding-bottom: 5% ;
+    font-size:6vh;
     width: 100%;
     background-color: #020122;
     font-family: Helvetica;
@@ -96,12 +85,19 @@ html, body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 
 .holder{
+    margin: 0px;
+    padding: 0px;
     display:flex;
     justify-content: center;
+    align-content: center;
     height: auto;
+    width: 100%;
     flex-grow: 1;
 }
 .left {
@@ -109,18 +105,17 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: end;
-    width: 40%;
+    /* width: 40%; */
+    height: 100%;
     background-color: #4981e9;
     opacity: 0.6;
     padding: 20px;
     position: relative;
+    transition: opacity 0.4s ease;
 }
 .left:hover{
-    background-color: #4981e9;
     opacity: 1;
-    transition: opacity 0.3s ease;
 }
-
 .leftTitle{
     margin: 0px;
     font-size: 6vw;
@@ -128,30 +123,23 @@ html, body {
     text-align: center;
     width:100%;
     line-height: 1;
-
 }
 .middle{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: end;
-    width: 40%;
+    /* width: 40%; */
+    height: 100%;
+
     background-color: #DB3069;
     opacity: 0.6;
     padding: 20px;
     position: relative;
+    transition: opacity 0.4s ease;
 }
 .middle:hover{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: end;
-    width: 40%;
-    background-color: #DB3069;
     opacity: 1;
-    transition: opacity 0.3s ease;
-    padding: 20px;
-    position: relative;
 }
 .middleTitle{
     margin: 0px;
@@ -160,30 +148,23 @@ html, body {
     text-align: center;
     width:100%;
     line-height: 1;
-
 }
 .right{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: end;
-    width: 40%;
+    height: 100%;
+
+    /* width: 40%; */
     background-color: #F7DC64;
     opacity: 0.6;
     padding: 20px;
     position: relative;
+    transition: opacity 0.4s ease;
 }
 .right:hover{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: end;
-    width: 40%;
-    background-color: #F7DC64;
-    opacity: 1;
-    transition: opacity 0.3s ease;
-    padding: 20px;
-    position: relative;
+   opacity: 1;
 }
 .rightTitle{
     margin: 0px;
@@ -193,7 +174,22 @@ html, body {
     width:100%;
     line-height: 1;
 }
-
+.subheading{
+    font-size: 2vw;
+}
+ /* LINKS LINKS LINKS LINKS LINKS LINKS LINKS LINKS LINKS LINKS LINKS LINKS LINKS LINKS LINKS LINKS LINKS LINKS LINKS */
+a{
+    margin: 0px;
+    padding: 0px;
+    width: 34%;
+}
+a:visited{
+    color: black;
+}
+a:link{
+    text-decoration: none;
+    color:  black;
+}
 footer{
     background-color: #020122;
     display: flex;
@@ -201,9 +197,11 @@ footer{
     padding: 30px;
     margin-left: auto;
     margin-right: auto;
-    /* justify-content: center; */
-  }
-
+}
+/*BDI BDI BDI BDI BDI BDI BDI BDI BDI BDI BDI BDI BDI BDI BDI BDI BDI BDI BDI BDI BDI BDI BDI BDI BDI BDI BDI */
+.BDIholder{
+    font-size: 3vw;
+}
 /* 
 .heading2{
     display: flex;
@@ -274,18 +272,15 @@ footer{
     padding-top: 60px;}  */
 
 
-a:link{
+
+/* a:visited{
     text-decoration: none;
     color:  rgb(142, 142, 252);
-}
-a:visited{
-    text-decoration: none;
-    color:  rgb(142, 142, 252);
-}
+} */
 /* a:hover{
     color: rgb(103, 103, 245);
 } */
-.title:hover{
+/* .title:hover{
     color: black;
 }
 .buttonContent:hover{
@@ -313,7 +308,7 @@ a:visited{
 }
 .block1{
     /* padding-left: 20%; */
-    padding-right:auto;
+    /* padding-right:auto;
     background-color: #ffffff;
     display: flex;
     padding-bottom: 400px;
@@ -368,8 +363,8 @@ a:visited{
 .imgCaption{
     text-transform: capitalize;
     font-size: 10px;
-}
-
+} */
+ 
 
 
 /* AI PAGE */
