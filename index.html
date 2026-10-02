@@ -1,22 +1,201 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <link rel="stylesheet" href="style.css">
-        
-    </head>
-<body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alanah Rhind | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-name-wrap">
+          <p class="small-label">Designer • researcher • maker</p>
+          <h1>Alanah<br />Rhind</h1>
+        </div>
 
-    <div class="myName">
-        <p>Alanah <br> Rhind</p>
+        <div class="hero-lower">
+          <nav class="side-nav" aria-label="Main navigation">
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact / About</a>
+          </nav>
+
+          <section class="editorial-intro">
+            <p class="small-label">About</p>
+            <p>
+              I am a multidisciplinary designer working between concept, research,
+              and making. My work sits in the space where material thinking,
+              digital experimentation, and human-centred design meet.
+            </p>
+          </section>
+        </div>
+      </header>
+
+      <main>
+        <section id="experience" class="info-section">
+          <div class="section-head">
+            <p class="small-label">Experience</p>
+            <h2>Selected experience</h2>
+          </div>
+
+          <div class="experience-selector" aria-label="Experience categories">
+            <button class="experience-tab active" type="button" data-name="Education" data-blurb="Placeholder summary for your education section." data-content="This section can hold your academic background, degrees, study focus, and key learning outcomes. Use it to frame the foundations that shaped your design practice.">
+              Education
+            </button>
+            <button class="experience-tab" type="button" data-name="Work experience" data-blurb="Placeholder summary for your work experience section." data-content="This section can outline the roles, studios, projects, or professional work that helped build your practice. Use it to show how your design work translated into real-world outcomes.">
+              Work experience
+            </button>
+            <button class="experience-tab" type="button" data-name="Volunteer work" data-blurb="Placeholder summary for your volunteer work section." data-content="This section can capture community contribution, collaborative projects, mentorship, or extracurricular work that reflects your values, leadership, and broader creative involvement.">
+              Volunteer work
+            </button>
+          </div>
+
+          <article class="experience-detail" id="experience-detail" aria-live="polite">
+            <div class="detail-topline">
+              <span class="detail-code">Experience</span>
+              <span class="detail-year" id="experience-type">Education</span>
+            </div>
+
+            <div class="detail-body">
+              <div class="detail-copy">
+                <h3 id="experience-heading">Education</h3>
+                <p id="experience-blurb">Placeholder summary for your education section.</p>
+                <p id="experience-content">This section can hold your academic background, degrees, study focus, and key learning outcomes. Use it to frame the foundations that shaped your design practice.</p>
+              </div>
+
+              <div class="detail-meta">
+                <div>
+                  <p class="meta-label">Category</p>
+                  <p>Design education</p>
+                </div>
+                <div>
+                  <p class="meta-label">Focus</p>
+                  <p>Academic background</p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section id="projects" class="info-section">
+          <div class="section-head">
+            <p class="small-label">Projects</p>
+            <h2>Recent work</h2>
+          </div>
+
+          <div class="project-carousel" aria-label="Project carousel">
+            <button class="project-card active" type="button" data-title="AI-driven materials exploration" data-year="2024" data-role="Research + design" data-summary="Placeholder project description for a concept-led exploration of AI and material systems." data-description="This project explores how AI can support design decisions by testing intuition against material logic, visual language, and process-driven experimentation. The work sits between research and making, allowing creative thinking to be tested in a practical design context.">
+              <span class="project-code">01</span>
+              <h3>AI-driven materials exploration</h3>
+              <p>Concept-led exploration of AI and material systems.</p>
+            </button>
+
+            <button class="project-card" type="button" data-title="Design innovation research" data-year="2023" data-role="Design research" data-summary="Placeholder project description for a more rigorous design or academic investigation." data-description="This work focuses on research-led design inquiry and the development of systems thinking, user-centred exploration, and conceptual testing. It frames design as a method for understanding complex problems and developing structured responses.">
+              <span class="project-code">02</span>
+              <h3>Design innovation research</h3>
+              <p>Research-led exploration into design opportunities.</p>
+            </button>
+
+            <button class="project-card" type="button" data-title="Experimental makes" data-year="2022" data-role="Prototyping + fabrication" data-summary="Placeholder project description for playful, material, or prototyping-based work." data-description="This project explores the value of experimentation, prototyping, and material testing as a way of discovering unexpected ideas. It celebrates process, making, and the way rough early iterations can sharpen design intention.">
+              <span class="project-code">03</span>
+              <h3>Experimental makes</h3>
+              <p>Material-led experimentation and exploratory making.</p>
+            </button>
+          </div>
+
+          <article class="project-detail" id="project-detail" aria-live="polite">
+            <div class="detail-topline">
+              <span class="detail-code" id="detail-code">01</span>
+              <span class="detail-year" id="detail-year">2024</span>
+            </div>
+
+            <div class="detail-body">
+              <div class="detail-copy">
+                <h3 id="detail-title">AI-driven materials exploration</h3>
+                <p id="detail-summary">Placeholder project description for a concept-led exploration of AI and material systems.</p>
+                <p id="detail-description">This project explores how AI can support design decisions by testing intuition against material logic, visual language, and process-driven experimentation. The work sits between research and making, allowing creative thinking to be tested in a practical design context.</p>
+              </div>
+
+              <div class="detail-meta">
+                <div>
+                  <p class="meta-label">Role</p>
+                  <p id="detail-role">Research + design</p>
+                </div>
+                <div>
+                  <p class="meta-label">Focus</p>
+                  <p>AI, materials, process</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="detail-visual" aria-label="Project visual placeholder">
+              Project visual / case study placeholder
+            </div>
+          </article>
+        </section>
+
+        <section id="contact" class="info-section contact-block">
+          <div class="section-head">
+            <p class="small-label">Contact / About</p>
+            <h2>Let’s make things</h2>
+          </div>
+
+          <div class="contact-wrap">
+            <p>
+              Placeholder intro text for your contact section, bio, or final note to collaborators.
+            </p>
+            <ul>
+              <li>Email: hello@example.com</li>
+              <li>Instagram: @yourhandle</li>
+              <li>LinkedIn: /in/yourname</li>
+            </ul>
+          </div>
+        </section>
+      </main>
     </div>
 
-    <div class="menuSelect"> 
-        <a href="me.html" class="options"><p>about me</p></a>
-            <a href="bdi.html" class="options"><p>BDI</p></a>
-            <a href="mdi.html" class="options"><p>MDI</p></a>
-            <a href="oth.html" class="options"><p>OTHER</p></a>
-    </div>
+    <script>
+      const projectCards = document.querySelectorAll('.project-card');
+      const detailCode = document.getElementById('detail-code');
+      const detailYear = document.getElementById('detail-year');
+      const detailTitle = document.getElementById('detail-title');
+      const detailSummary = document.getElementById('detail-summary');
+      const detailDescription = document.getElementById('detail-description');
+      const detailRole = document.getElementById('detail-role');
 
+      projectCards.forEach((card) => {
+        card.addEventListener('click', () => {
+          projectCards.forEach((item) => item.classList.remove('active'));
+          card.classList.add('active');
+
+          const code = card.querySelector('.project-code')?.textContent.trim() || '00';
+          detailCode.textContent = code;
+          detailYear.textContent = card.dataset.year || '2024';
+          detailTitle.textContent = card.dataset.title || 'Project title';
+          detailSummary.textContent = card.dataset.summary || 'Project summary';
+          detailDescription.textContent = card.dataset.description || 'Project description';
+          detailRole.textContent = card.dataset.role || 'Role';
+        });
+      });
+
+      const experienceTabs = document.querySelectorAll('.experience-tab');
+      const experienceType = document.getElementById('experience-type');
+      const experienceHeading = document.getElementById('experience-heading');
+      const experienceBlurb = document.getElementById('experience-blurb');
+      const experienceContent = document.getElementById('experience-content');
+
+      experienceTabs.forEach((tab) => {
+        tab.addEventListener('click', () => {
+          experienceTabs.forEach((item) => item.classList.remove('active'));
+          tab.classList.add('active');
+
+          experienceType.textContent = tab.dataset.name || 'Education';
+          experienceHeading.textContent = tab.dataset.name || 'Education';
+          experienceBlurb.textContent = tab.dataset.blurb || 'Placeholder summary';
+          experienceContent.textContent = tab.dataset.content || 'Experience content';
+        });
+      });
+    </script>
+  </body>
 </html>
-</body>
