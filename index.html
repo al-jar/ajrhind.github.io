@@ -39,43 +39,96 @@
             <h2>Selected experience</h2>
           </div>
 
-          <div class="experience-selector" aria-label="Experience categories">
-            <button class="experience-tab active" type="button" data-name="Education" data-blurb="Placeholder summary for your education section." data-content="This section can hold your academic background, degrees, study focus, and key learning outcomes. Use it to frame the foundations that shaped your design practice.">
-              Education
-            </button>
-            <button class="experience-tab" type="button" data-name="Work experience" data-blurb="Placeholder summary for your work experience section." data-content="This section can outline the roles, studios, projects, or professional work that helped build your practice. Use it to show how your design work translated into real-world outcomes.">
-              Work experience
-            </button>
-            <button class="experience-tab" type="button" data-name="Volunteer work" data-blurb="Placeholder summary for your volunteer work section." data-content="This section can capture community contribution, collaborative projects, mentorship, or extracurricular work that reflects your values, leadership, and broader creative involvement.">
-              Volunteer work
-            </button>
+          <div class="experience-selector" role="tablist" aria-label="Experience categories">
+            <button class="experience-tab active" id="education-tab" type="button" role="tab" aria-selected="true" aria-controls="education-panel">Education</button>
+            <button class="experience-tab" id="work-tab" type="button" role="tab" aria-selected="false" aria-controls="work-panel">Work experience</button>
+            <button class="experience-tab" id="volunteer-tab" type="button" role="tab" aria-selected="false" aria-controls="volunteer-panel">Volunteer work</button>
           </div>
 
-          <article class="experience-detail" id="experience-detail" aria-live="polite">
-            <div class="detail-topline">
-              <span class="detail-code">Experience</span>
-              <span class="detail-year" id="experience-type">Education</span>
-            </div>
-
-            <div class="detail-body">
-              <div class="detail-copy">
-                <h3 id="experience-heading">Education</h3>
-                <p id="experience-blurb">Placeholder summary for your education section.</p>
-                <p id="experience-content">This section can hold your academic background, degrees, study focus, and key learning outcomes. Use it to frame the foundations that shaped your design practice.</p>
+          <div class="experience-detail" aria-live="polite">
+            <section class="experience-panel" id="education-panel" role="tabpanel" aria-labelledby="education-tab">
+              <div class="detail-topline">
+                <span class="detail-code">Experience</span>
+                <span class="detail-year">Education</span>
               </div>
-
-              <div class="detail-meta">
-                <div>
-                  <p class="meta-label">Category</p>
-                  <p>Design education</p>
-                </div>
-                <div>
-                  <p class="meta-label">Focus</p>
-                  <p>Academic background</p>
-                </div>
+              <div class="experience-entries">
+                <article class="experience-entry">
+                  <p class="entry-period">2024 — 2025</p>
+                  <div>
+                    <h3>Master of Design Innovation</h3>
+                    <p class="entry-place">Te Herenga Waka Victoria University of Wellington</p>
+                    <p>I investigated the intersection of realization of digital products, focusing on using localised Machine Learning methods to influence the form of a micro 3D model, to then analyse the physical output from the PolyJet 3D printer.<br><i>More information below and in Projects carousel</i></bre><br><br><a href="https://made.ac.nz/project/artificial-voxel-intelligence-2025/">MADE</a> <br><a href="https://openaccess.wgtn.ac.nz/articles/thesis/Artificial_Voxel_Intelligence/30214801?file=58276633">My Thesis</a></p>
+                  </div>
+                </article>
+                <article class="experience-entry">
+                  <p class="entry-period">2021 — 2023</p>
+                  <div>
+                    <h3>Bachelor of Design Innovation</h3>
+                    <p class="entry-place">Te Herenga Waka Victoria University of Wellington</p>
+                    <p>Major in Media design, Minor in Industrial design</p>
+                  </div>
+                </article>
               </div>
-            </div>
-          </article>
+            </section>
+
+            <section class="experience-panel" id="work-panel" role="tabpanel" aria-labelledby="work-tab" hidden>
+              <div class="detail-topline">
+                <span class="detail-code">Experience</span>
+                <span class="detail-year">Work experience</span>
+              </div>
+              <div class="experience-entries">
+                <article class="experience-entry">
+                  <p class="entry-period">2025 — Current</p>
+                  <div>
+                    <h3>Scanning Technician/Researcher</h3>
+                    <p class="entry-place">UunaFit</p>
+                    <p>At UunaFit, I serve as a Computational Designer and 3D Scanning Technician. I am heavily involved in R&D, both digitally and physically. I create custom Grasshopper scripts, generate custom patterns, and oversee the quality assurance of the prototypes. I also run the 3D scanning sessions, which requires clear precision and understanding, both of the client and the technology.</p>
+                  </div>
+                </article>
+                <article class="experience-entry">
+                  <p class="entry-period">2023 — Current</p>
+                  <div>
+                    <h3>Tutor</h3>
+                    <p class="entry-place">Te Herenga Waka Victoria University of Wellington</p>
+                    <p>As a Tutor, I planned tutorial content, communicated and taught complex topics. I've delivered multiple guest lectures, across different classes. Additionally, I consulted students, and assisted them in the creation of their concepts. </p>
+                  </div>
+                </article>
+                <article class="experience-entry">
+                  <p class="entry-period">2025 — Current</p>
+                  <div>
+                    <h3>Sales Associate</h3>
+                    <p class="entry-place">Ricochet/Gregory</p>
+                    <p>As a Sales Associate, I was responsible for typical retail tasks (POS system/cash handling, stock management, client communication, product knowledge, etc.), along with sole charge of the store, and client styling . I took on manager responsibilities temporarily, and assisted our Stylist with our VIP styling sessions. </p>
+                  </div>
+                </article>
+              </div>
+            </section>
+
+            <section class="experience-panel" id="volunteer-panel" role="tabpanel" aria-labelledby="volunteer-tab" hidden>
+              <div class="detail-topline">
+                <span class="detail-code">Experience</span>
+                <span class="detail-year">Volunteer work</span>
+              </div>
+              <div class="experience-entries">
+                <article class="experience-entry">
+                  <p class="entry-period">Apr, 2025 — Aug, 2025</p>
+                  <div>
+                    <h3>Postgraduate Exhibition Design Lead</h3>
+                    <p class="entry-place">Te Herenga Waka Victoria University of Wellington</p>
+                    <p>For this role I volunteered to lead the exhibition planning team, and to be in charge of the Visual Identity. This involved conceptualising the visual identity, designing collateral for print and digital, planning the layout, and managing the team. </p>
+                  </div>
+                </article>
+                <!-- <article class="experience-entry">
+                  <p class="entry-period">Year — Year</p>
+                  <div>
+                    <h3>Another volunteer role</h3>
+                    <p class="entry-place">Organisation or community</p>
+                    <p>Add another volunteer entry here, or remove this placeholder if you do not need it.</p>
+                  </div>
+                </article> -->
+              </div>
+            </section>
+          </div>
         </section>
 
         <section id="projects" class="info-section">
@@ -135,6 +188,92 @@
           </article>
         </section>
 
+        <section id="skills" class="info-section">
+          <div class="section-head">
+            <p class="small-label">Skills &amp; interests</p>
+            <h2>What I bring</h2>
+          </div>
+
+          <div class="experience-selector" role="tablist" aria-label="Skills and interests categories">
+            <button class="experience-tab active" id="hard-skills-tab" type="button" role="tab" aria-selected="true" aria-controls="hard-skills-panel">Hard skills</button>
+            <button class="experience-tab" id="soft-skills-tab" type="button" role="tab" aria-selected="false" aria-controls="soft-skills-panel">Soft skills</button>
+            <button class="experience-tab" id="interests-tab" type="button" role="tab" aria-selected="false" aria-controls="interests-panel">Personal interests</button>
+          </div>
+
+          <div class="experience-detail" aria-live="polite">
+            <section class="experience-panel" id="hard-skills-panel" role="tabpanel" aria-labelledby="hard-skills-tab">
+              <div class="detail-topline">
+                <span class="detail-code">Skills</span>
+                <span class="detail-year">Hard skills</span>
+              </div>
+              <div class="experience-entries">
+                <article class="experience-entry">
+                  <p class="entry-period">Computation</p>
+                  <div>
+                    <h3>Rhino 8 / Grasshopper</h3>
+                    <p>I have developed and honed this skill over my masters degree, where I exclusively used Grasshopper. I have continued to help solve design problems with the used of Grasshopper.</p>
+                    <h3>General Coding Knowledge</h3>
+                    <p></p>
+                  </div>
+                </article>
+                <article class="experience-entry">
+                  <p class="entry-period"></p>
+                  <div>
+                    <h3>Another hard skill</h3>
+                    <p>Add another relevant capability here. Duplicate this entry block to include more skills.</p>
+                  </div>
+                </article>
+              </div>
+            </section>
+
+            <section class="experience-panel" id="soft-skills-panel" role="tabpanel" aria-labelledby="soft-skills-tab" hidden>
+              <div class="detail-topline">
+                <span class="detail-code">Skills</span>
+                <span class="detail-year">Soft skills</span>
+              </div>
+              <div class="experience-entries">
+                <article class="experience-entry">
+                  <p class="entry-period">Strength</p>
+                  <div>
+                    <h3>People or process strength</h3>
+                    <p>Describe a way you work with people or approach challenges, ideally with an example from your experience.</p>
+                  </div>
+                </article>
+                <article class="experience-entry">
+                  <p class="entry-period">Strength</p>
+                  <div>
+                    <h3>Another soft skill</h3>
+                    <p>Add another strength and a brief example of how it shows up in your work.</p>
+                  </div>
+                </article>
+              </div>
+            </section>
+
+            <section class="experience-panel" id="interests-panel" role="tabpanel" aria-labelledby="interests-tab" hidden>
+              <div class="detail-topline">
+                <span class="detail-code">Outside the work</span>
+                <span class="detail-year">Personal interests</span>
+              </div>
+              <div class="experience-entries">
+                <article class="experience-entry">
+                  <p class="entry-period">Interest</p>
+                  <div>
+                    <h3>A personal interest</h3>
+                    <p>Add an interest, hobby, or subject you enjoy exploring, and what draws you to it.</p>
+                  </div>
+                </article>
+                <article class="experience-entry">
+                  <p class="entry-period">Interest</p>
+                  <div>
+                    <h3>Another personal interest</h3>
+                    <p>Add another detail that gives visitors a sense of you beyond your professional work.</p>
+                  </div>
+                </article>
+              </div>
+            </section>
+          </div>
+        </section>
+
         <section id="contact" class="info-section contact-block">
           <div class="section-head">
             <p class="small-label">Contact / About</p>
@@ -180,20 +319,36 @@
       });
 
       const experienceTabs = document.querySelectorAll('.experience-tab');
-      const experienceType = document.getElementById('experience-type');
-      const experienceHeading = document.getElementById('experience-heading');
-      const experienceBlurb = document.getElementById('experience-blurb');
-      const experienceContent = document.getElementById('experience-content');
+      const experiencePanels = document.querySelectorAll('.experience-panel');
 
       experienceTabs.forEach((tab) => {
         tab.addEventListener('click', () => {
-          experienceTabs.forEach((item) => item.classList.remove('active'));
-          tab.classList.add('active');
+          experienceTabs.forEach((item) => {
+            const isSelected = item === tab;
+            item.classList.toggle('active', isSelected);
+            item.setAttribute('aria-selected', String(isSelected));
+          });
 
-          experienceType.textContent = tab.dataset.name || 'Education';
-          experienceHeading.textContent = tab.dataset.name || 'Education';
-          experienceBlurb.textContent = tab.dataset.blurb || 'Placeholder summary';
-          experienceContent.textContent = tab.dataset.content || 'Experience content';
+          experiencePanels.forEach((panel) => {
+            panel.hidden = panel.id !== tab.getAttribute('aria-controls');
+          });
+        });
+      });
+
+      const skillsTabs = document.querySelectorAll('#skills .experience-tab');
+      const skillsPanels = document.querySelectorAll('#skills .experience-panel');
+
+      skillsTabs.forEach((tab) => {
+        tab.addEventListener('click', () => {
+          skillsTabs.forEach((item) => {
+            const isSelected = item === tab;
+            item.classList.toggle('active', isSelected);
+            item.setAttribute('aria-selected', String(isSelected));
+          });
+
+          skillsPanels.forEach((panel) => {
+            panel.hidden = panel.id !== tab.getAttribute('aria-controls');
+          });
         });
       });
     </script>
